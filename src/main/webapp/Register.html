@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            width: 100%;
+            background: #1976d2;
+            padding: 15px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 10px 15px;
+            transition: 0.3s;
+            border-radius: 6px;
+        }
+        .navbar a:hover {
+            background: #1565c0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            margin-top: 80px; /* Space for navbar */
+        }
+        h4 {
+            color: #333;
+        }
+        label {
+            display: block;
+            color: #555;
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #64b5f6;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        input[type="submit"]:hover {
+            background: #42a5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="Login.html">Login</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <h4>Please fill all the details correctly</h4>
+        <form action="Register">
+            <label>Name of the Customer</label>
+            <input type="text" name="cname" required>
+            
+            <label>Email of the Customer</label>
+            <input type="text" name="email" required>
+            
+            <label>Phone Number of the Customer</label>
+            <input type="text" name="phone" required>
+            
+            <label>Preferred Customer ID</label>
+            <input type="text" name="cid" required>
+            
+            <label>Starting Balance</label>
+            <input type="text" name="bal" required>
+            
+            <label>Preferred Password</label>
+            <input type="password" name="pwd" required>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>

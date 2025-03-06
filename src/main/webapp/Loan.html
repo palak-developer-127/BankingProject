@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Apply Loan</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+        margin: 0;
+    }
+    .container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px;
+    }
+    h2 {
+        color: #333;
+    }
+    label, p {
+        color: #555;
+    }
+    select, input[type="submit"] {
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 6px;
+    }
+    .btn {
+        background-color: #64b5f6;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .btn:hover {
+        background-color: #42a5f5;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Apply for a Loan</h2>
+      
+        
+        <form action="ApplyLoan" method="post">
+            <label for="loanType">Select Loan Type:</label>
+            <select id="loanType" name="loanType">
+                <option value="Home Loan">Home Loan</option>
+                <option value="Car Loan">Car Loan</option>
+                <option value="Education Loan">Education Loan</option>
+                <option value="Personal Loan">Personal Loan</option>
+            </select>
+            <input type="submit" class="btn" value="Apply Loan">
+        </form>
+    </div>
+
+</body>
+</html>

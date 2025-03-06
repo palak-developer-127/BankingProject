@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            width: 100%;
+            background: #1976d2;
+            padding: 15px 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 10px 15px;
+            transition: 0.3s;
+            border-radius: 6px;
+        }
+        .navbar a:hover {
+            background: #1565c0;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            margin-top: 80px; /* Space for navbar */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            color: #555;
+            font-size: 16px;
+            display: block;
+            text-align: left;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #64b5f6;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #42a5f5;
+        }
+        
+        /* Additional Links */
+        .extra-links {
+            margin-top: 10px;
+        }
+        .extra-links a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #1976d2;
+            transition: 0.3s;
+        }
+        .extra-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+       <a href="index.html">Home</a>
+        <a href="Register.html">Register</a>
+        <a href="Login.html">Login</a>
+        <a href="Contact.html">Contact</a>	
+    </div>
+
+    <div class="login-container">
+        <h1>Login Page</h1>
+        <form action="Login">
+            <label for="cid">Customer Id</label>
+            <input type="text" name="cid" id="cid" required>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" required>
+            <input type="submit" value="Login">
+        </form>
+
+      
+        <div class="extra-links">
+            <a href="Changepwd.html">Forgot Password?</a> | 
+            <a href="Register.html">Create an Account</a>
+        </div>
+    </div>
+</body>
+</html>

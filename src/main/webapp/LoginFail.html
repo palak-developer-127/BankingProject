@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Failed</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #f3e5f5, #e1f5fe);
+        margin: 0;
+    }
+    .container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 350px;
+    }
+    h4 {
+        color: #d32f2f;
+    }
+    input[type="text"], input[type="password"] {
+        width: 80%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    input[type="submit"] {
+        background-color: #64b5f6;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #42a5f5;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h4>Login failed !!! Please try again</h4>
+        <form action="Login">
+            <label>Customer Id</label><br>
+            <input type="text" name="cid"><br>
+            <label>Password</label><br>
+            <input type="password" name="pwd"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
